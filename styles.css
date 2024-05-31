@@ -11,12 +11,12 @@ html {
     overflow: hidden;
     margin: 0;
     padding: 0;
-    display:flex;
+    display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;   
     background: var(--color-purple);
 }
+
 body {
     display:flex;
     flex-direction: column;
@@ -35,7 +35,6 @@ h1 {
     position: absolute;
     right: -310px;
     top: -100px;
-
 }
 
 #left-pal {
@@ -43,8 +42,6 @@ h1 {
     bottom: -100px;
     left: -790px;
 }
-
-
 
 pre {
     position: absolute;
@@ -59,8 +56,13 @@ span:first-of-type {
     font-size: 2rem;
 }
 
-span {
-    font-size: 0.8rem;
+.subtext {
+    font-size: 1rem;
+    font-family: monospace;
+}
+
+#noun {
+    padding-left: 5px;
 }
 
 .full-display {
@@ -133,10 +135,11 @@ footer {
 
 #inputStr {
     font-size: 4rem;
+    font-family: var(--font-main)
 }
 
 #result {
-    font-family: var(--font-main);
+    font-family: monospace;
     text-align: center;
     font-size: 2rem;
     padding-bottom: 50px;
@@ -148,7 +151,7 @@ footer {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     #check-btn {
         display: none;
     }

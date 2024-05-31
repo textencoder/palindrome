@@ -52,6 +52,3 @@ const displayResult = (userInput) => {
             submitBtn.style.backgroundColor = "#f08080";
         }
     }
-
-
-
