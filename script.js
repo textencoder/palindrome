@@ -19,11 +19,11 @@ inputBox.addEventListener("keydown", e => {
 
 const displayResult = (userInput) => {
 
-        let inputStr = userInput;
+        let inputStr = userInput.toLowerCase();
 
-        let reverseString = userInput.split("").reverse().join("");
+        let reverseString = inputStr.split("").reverse().join("");
     
-        let isPalindrome = (userInput === reverseString);
+        let isPalindrome = (inputStr === reverseString);
 
         if (isPalindrome) {
             detectiveImage.style.display = 'none';
