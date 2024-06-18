@@ -24,23 +24,18 @@ body {
     align-items: center;
 }
 
-h1 {
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    width: 100vw;
+}
+
+#header {
     font-family: var(--font-main);
-    font-size: 9.4rem;
-    position: absolute;
+    font-size: 2.5rem;
     color: var(--color-teal);
-}
-
-#right-pal {
-    position: absolute;
-    right: -310px;
-    top: -100px;
-}
-
-#left-pal {
-    position: absolute;
-    bottom: -100px;
-    left: -790px;
 }
 
 pre {
@@ -81,16 +76,6 @@ span:first-of-type {
     display: none;
 }
 
-header {
-    height: 25vh;
-    width: 100vw;
-}
-
-footer {
-    height: 25vh;
-    width: 100vw;
-}
-
 .input-box {
     width: 100%;
     position: relative;
@@ -106,7 +91,7 @@ footer {
     border: 3px solid var(--color-blue);
     box-shadow: 0 0 10px var(--color-blue);
     font-family: monospace;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 10px 25px 10px 25px;
     color: black;
 }
@@ -155,24 +140,11 @@ footer {
     #check-btn {
         display: none;
     }
-    h1 {
-        font-size: 5rem;
-    }
-    #right-pal {
-        position: absolute;
-        right: -165px;
-        top: -40px;
-    }
-    
-    #left-pal {
-        position: absolute;
-        bottom: -50px;
-        left: -420px;
- 
-   }
+
    #detective {
     width: 80%;
    }
+
    .full-display {
     display: flex;
     flex-direction: column;
@@ -181,6 +153,7 @@ footer {
     width: 60vw;
     height: 50vh;
 }
+
 #text-input {
     width: 100%;
     height: 100%;
@@ -188,7 +161,7 @@ footer {
     border: 3px solid var(--color-blue);
     box-shadow: 0 0 10px var(--color-blue);
     font-family: monospace;
-    font-size: 1.4rem;
+    font-size: 1rem;
     text-align: center;
     padding: 10px 25px 10px 25px;
     color: black;
