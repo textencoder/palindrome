@@ -91,6 +91,7 @@ span:first-of-type {
     border-radius: 15px;
     border: 3px solid var(--color-blue);
     box-shadow: 0 0 10px var(--color-blue);
+    text-align: center;
     font-family: monospace;
     font-size: 1rem;
     padding: 10px 25px 10px 25px;
@@ -101,7 +102,7 @@ span:first-of-type {
     position: absolute;
     right: 11px;
     height: 100%;
-    width: 3.5rem;
+    width: 3rem;
     border-radius: 7.5px;
     border: none;
     background-color: var(--color-blue);

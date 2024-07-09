@@ -8,12 +8,16 @@ const resultText = document.getElementById('result');
 
 
 submitBtn.addEventListener("click", () => {
-    displayResult(document.getElementById('text-input').value)
+    displayResult(inputBox.value);
+    inputBox.blur();
+    inputBox.value = '';
 })
 
 inputBox.addEventListener("keydown", e => {
-    if (e.key === "Enter") {
-        displayResult(document.getElementById('text-input').value);
+    if (e.key === "Enter" || e.key === 13) {
+        displayResult(inputBox.value);
+        inputBox.blur();
+        inputBox.value = '';
     }
 })
 
@@ -24,11 +28,6 @@ const displayResult = (userInput) => {
         let reverseString = inputStr.split("").reverse().join("");
     
         let isPalindrome = (inputStr === reverseString);
-
-        // Do not accept invalid input
-        // if (userInput === "") {
-        //    resultText.innerText = "Please enter a valid input";
-        // }
 
         if (isPalindrome) {
             detectiveImage.style.display = 'none';
