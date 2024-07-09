@@ -19,7 +19,7 @@ inputBox.addEventListener("keydown", e => {
 
 const displayResult = (userInput) => {
 
-        let inputStr = userInput.toLowerCase();
+        let inputStr = userInput.replace(/[^0-9a-z]/gi, '').toLowerCase();
 
         let reverseString = inputStr.split("").reverse().join("");
     
@@ -34,7 +34,7 @@ const displayResult = (userInput) => {
             detectiveImage.style.display = 'none';
             falseImage.style.display = 'none';
             trueImage.style.display = 'block';
-            resultText.innerHTML = `<span id="inputStr">${inputStr}</span> <br> is a palindrome`;
+            resultText.innerHTML = `<span id="inputStr">${userInput}</span> <br> is a palindrome`;
             headerText.style.color = '#3cb371'
             inputBox.style.borderColor = "#3cb371";
             inputBox.style.boxShadow = "0 0 10px #3cb371";
@@ -43,7 +43,7 @@ const displayResult = (userInput) => {
             detectiveImage.style.display = 'none';
             trueImage.style.display = 'none';
             falseImage.style.display = 'block';
-            resultText.innerHTML = `<span id="inputStr">${inputStr}</span> <br> is NOT a palindrome`;
+            resultText.innerHTML = `<span id="inputStr">${userInput}</span> <br> is NOT a palindrome`;
             headerText.style.color = '#f08080'
             inputBox.style.borderColor = "#f08080";
             inputBox.style.boxShadow = "0 0 10px #f08080";
