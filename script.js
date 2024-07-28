@@ -23,6 +23,10 @@ inputBox.addEventListener("keydown", e => {
 
 const displayResult = (userInput) => {
 
+    if (!inputBox.value) {
+        alert("Please input a value");
+    }
+
         let inputStr = userInput.replace(/[^0-9a-z]/gi, '').toLowerCase();
 
         let reverseString = inputStr.split("").reverse().join("");
