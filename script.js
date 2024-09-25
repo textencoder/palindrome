@@ -39,17 +39,11 @@ const displayResult = (userInput) => {
             trueImage.style.display = 'block';
             resultText.innerHTML = `<span id="inputStr">${userInput}</span> <br> is a palindrome`;
             headerText.style.color = '#3cb371'
-            inputBox.style.borderColor = "#3cb371";
-            inputBox.style.boxShadow = "0 0 10px #3cb371";
-            submitBtn.style.backgroundColor = "#3cb371";
         } else {
             detectiveImage.style.display = 'none';
             trueImage.style.display = 'none';
             falseImage.style.display = 'block';
             resultText.innerHTML = `<span id="inputStr">${userInput}</span> <br> is NOT a palindrome`;
-            headerText.style.color = '#f08080'
-            inputBox.style.borderColor = "#f08080";
-            inputBox.style.boxShadow = "0 0 10px #f08080";
-            submitBtn.style.backgroundColor = "#f08080";
+            headerText.style.color = '#f08080'; 
         }
     }
